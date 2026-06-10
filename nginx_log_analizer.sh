@@ -12,10 +12,10 @@ read_log() {
   awk '{print $7}' $FILE_LOG | sort | uniq -c | sort -rn | head -5
 
  echo " ========== Top 5 status code with most requests ================ "
- awk 'print $9}' $FILE_LOG | sort | uniq -c | sort -rn | head -5
+ awk '{print $9}' $FILE_LOG | sort | uniq -c | sort -rn | head -5
 
  echo " ============ Top 5 user agents ============" 
-  awk 'print $12}' $LOG_FILE | sort | uniq -c | sort -rn | head -5
+  awk '{print $12}' $LOG_FILE | sort | uniq -c | sort -rn | head -5
 }
 
 read_log
