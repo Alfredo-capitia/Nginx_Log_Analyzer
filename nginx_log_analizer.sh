@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-FILE_LOG="/home/levelup007/devops-course/linux/nginx_log_analizer/log_analizer"
+FILE_LOG="/home/levelup007/devops-course/linux/nginx_log_analizer/log_analizer.log"
 
 read_log() {
   echo "=========Top 5  ip address with most requests========"
