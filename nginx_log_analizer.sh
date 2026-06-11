@@ -8,7 +8,7 @@ read_log() {
   awk '{print $1}' $FILE_LOG | sort | uniq -c | sort -rn | head -5
 
   echo " ================= Top 5 hours with the most requests ==================="
-  awk '{print $4}' $FILE_LOG | sort | uniq -c | sort -rn | head -5
+  awk '{print $4}' $FILE_LOG | cut -c14-21 | sort | uniq -c | sort -rn | head -5
 
   echo " =============== Top 5 paths with most requests  ==============="
   awk '{print $7}' $FILE_LOG | sort | uniq -c | sort -rn | head -5
