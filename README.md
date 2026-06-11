@@ -79,3 +79,6 @@ nginx_log_analizer/
 ## License
 
 This project is for educational purposes as part of a DevOps course.
+
+##  Autor
+Alfredo Capitia — [GitHub](https://github.com/Alfredo-capitia)
